@@ -8,7 +8,9 @@ body {
   background: whitesmoke;
   font-family: "Playfair Display", serif;
 }
+
 nav {
+ color: rgb(6, 70, 6);
   position: absolute;
   top: 0;
   left: 0;
@@ -30,8 +32,9 @@ nav {
 
 .nav-logo-img{
     height: 50px;
-    width: auto;
-    object-fit: contain;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 
@@ -92,21 +95,69 @@ nav a:hover {
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
+    text-align: left;
     padding: 3rem 2rem;
-    max-width: 60px;
+    max-width: 560px;
 }
 
 .hero-title{
-    font-family: 'Playright Display', serif;
-    font-size: 56px;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
     color: #fff;
     line-height: 1.1;
-    margin-bottom: 1 rem;
+    margin-bottom: 1rem;
 }
 
 .hero-title span{
     display: inline-block;
     transition: transform 0.35s ease, color 0.35s ease;
     cursor: default;
-}
+ }
+
+ .hero-title span:hover{
+    color: white;
+    transform: translateY(-5px) scale(1.05); 
+ }
+
+.hero-subtitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+ }   
+
+ .hero-subtitle em{
+    font-style: normal;
+    display: inline-block;
+    transition: color 0.3s , transform 0.3s;
+    cursor: default;
+ }
+
+ .hero-subtitle em:hover{
+    color: rgb(17, 91, 67);
+    transform: translateY(-2px);
+ }
+
+ .hero-btn{
+    padding: 16px 48px;
+    background: transparent;
+    color: rgb(79, 103, 79);
+    border: 1.5px solid rgba(255,255,255,0.7);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+ }
+
+ .hero-btn:hover{
+    background: rgba(255,255,255,0.15);
+    border-color: rgb(6, 49, 6);
+    transform: translateY(-3px);
+ }
+ 
+ .hero-btn:active{
+    transform: translateY(0);
+ }
