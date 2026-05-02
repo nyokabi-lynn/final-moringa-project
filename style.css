@@ -8,3 +8,31 @@ body {
     background: whitesmoke;
     font-family: "Playfair Display", serif;
 }
+ nav{
+    position:absolute; 
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    gap:2rem;
+    padding: 1.5rem 3rem;
+    z-index:10;
+ }
+
+ nav a{
+    color: rgb(200, 232, 200);
+    text-decoration: none;
+    font-family:"Playfair Display", serif;
+    font-size:14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+ }
+
+ nav a :hover{
+    color: #a8d0ff
+ }
+
+ hero{
+    
+ }
