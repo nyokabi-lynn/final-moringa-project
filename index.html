@@ -9,16 +9,35 @@
 <body>
     <nav>
     <a href="index.html" class="nav-logo">
-      <img src="" alt="Logo" class="nav-logo-img"/>
+      <img src="logo wellness.jpg" alt="Logo" class="nav-logo-img"/>
       <span class="nav-logo-text"></span>
     </a>
 
+    <!--visible on mobile-->
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="about.html#services">Services</a>
       <a href="booking.html">Contact</a>
     </div>
+   
+    <!--visibleon mobile hidden on desktop-->
+<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span>Home</span>
+      <span>About</span>
+      <span>Services</span>
+      <span>Contact</span>
+    </div>
+  </nav>
+
+  <!-- ══ MOBILE MENU ══ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="about.html#services">Services</a>
+    <a href="booking.html">Contact</a>
+  </div>
+
     
 </body>
 </html>
