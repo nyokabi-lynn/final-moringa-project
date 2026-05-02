@@ -1,38 +1,80 @@
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: whitesmoke;
-    font-family: "Playfair Display", serif;
+  background: whitesmoke;
+  font-family: "Playfair Display", serif;
 }
- nav{
-    position:absolute; 
-    top:0;
-    left:0;
-    width:100%;
-    display:flex;
-    gap:2rem;
-    padding: 1.5rem 3rem;
-    z-index:10;
- }
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 3rem;
+  z-index: 10;
+}
 
- nav a{
-    color: rgb(200, 232, 200);
-    text-decoration: none;
-    font-family:"Playfair Display", serif;
-    font-size:14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: color 0.3s;
- }
+nav a {
+  color: rgb(200, 232, 200);
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
 
- nav a :hover{
-    color: #a8d0ff
- }
+nav a:hover {
+  color: #a8d0ff;
+}
 
- hero{
-    
- }
+hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('bamboo\ sitting\ area.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition:background 0.5s ease ;
+}
+
+hero:hover .hero-overlay{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 60px;
+}
+
+hero-title{
+    font-family: 'Playright Display', serif;
+    font-size: 56px;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 1 rem;
+}
+
+hero-title span{
+    display: inline-block;
+    transition: transform 0.35s ease, color 0.35s ease;
+    cursor: default;
+}
