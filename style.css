@@ -192,4 +192,34 @@ nav a:hover {
   transform: translateY(-7px) rotate(-45deg);
  }
 
- 
+ .mobile-menu{
+  display: none;
+  position: absolute;
+  top: 70px;
+  left:0;
+  width:100%;
+  background: rgba(9, 20, 40, 0.97);
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  gap: 1.2rem;
+  z-index:20;
+ }
+
+ .mobile-menu.open{
+  display:flex;
+ }
+
+ .mobile-menu a{
+  color:rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size:14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 0.5px solid rgba(255,255,255,0.1);
+  padding-bottom: 1rem;
+  transition:color 0.3s;
+ }
+
+ .mobile-menu a:hover{
+  color:#fff
+ }
