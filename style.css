@@ -163,10 +163,100 @@ nav a:hover {
  }
 
  /*feature section */
- 
 
+ .features-section{
+  background: rgb(179, 176, 176);
+  padding: 5rem 2rem;
+  font-family: 'Playfair Diaplay',serif;
+ }
 
+ .features-header{
+  text-align: center;
+  margin-bottom: 3.5rem;
+ }
 
+ .features-eyebrow{
+  display: inline-block;
+  font-size:  11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(84, 150, 100);
+  margin-bottom: 0.8rem;
+}
+
+.features-title{
+  font-family: 'Playball Regular',sans-serif;
+  font-size: 34px;
+  color: rgb(4, 50, 26);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.features-subtitle{
+  font-size: 15px;
+  color: rgb(4, 50, 26);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.features-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.feature-card{
+  background: #d9e7dc7e;
+  border: 0.5px solid rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  text-align: center;
+  padding:2rem 1.5rem;
+  transition: transform 0.3s;
+  box-shadow: 0.3s;
+  border-color: 0.3s;
+  cursor: default;
+}
+
+.feature-card :hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(131, 136, 141, 0.5);
+}
+
+.feature-icon{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  display:flex;
+  background:#9bbda9;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto 1.2rem;
+  transition: background 0.3s, transform 0.3s,;
+}
+
+.features-card :hover .feature-icon{
+  background: #716f6f;
+  transform: scale(1.1)rotate(-5deg);
+}
+
+.feature-name{
+  font-family: 'Playball Regular',sans-serif;
+  font-size:17px;
+  color:rgb(21, 30, 24);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.feature-desc{
+  font-size: 13px;
+  color: rgb(21, 30, 24);
+  line-height: 1.7;
+}
 
 
 
