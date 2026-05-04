@@ -39,7 +39,7 @@ nav {
 
 
 .nav-logo-text {
-  font-family: 'Playball', sans-serif;
+  font-family: 'Playball-Regular', sans-serif;
   font-size: 16px;
   color: #fff;
   font-weight: 700;
@@ -162,6 +162,54 @@ nav a:hover {
     transform: translateY(0);
  }
 
+ /*feature section */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /*hamburger toggle menu */
  .hamburger{
   display: none;
@@ -223,3 +271,5 @@ nav a:hover {
  .mobile-menu a:hover{
   color:#fff
  }
+
+
