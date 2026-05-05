@@ -7,7 +7,7 @@ const services = [
     price: "",
     per: "per person",
     badge: "Popular",
-    img:'images/aromatherapy.jpg.jpg',
+    img:'aromatherapy.jpg',
   },
   {
     name: "Wood Therapy",
@@ -15,7 +15,7 @@ const services = [
     price: "",
     per: "per person",
     badge:'',
-    img:'images/wood therapy.jpg',
+    img:'woodtherapy.jpg',
   },
   {
     name: "Nature's Kiss",
@@ -23,7 +23,7 @@ const services = [
     price: "",
     per: "per person",
     badge: "Premium",
-    img:'images/outdoor nature spa.jpg',
+    img:'outdoornaturespa.jpg',
   },
   {
     name: "Swedish Massage",
@@ -31,7 +31,7 @@ const services = [
     price: "",
     per: "per person",
     badge: "Popular",
-    img:'images/swedish care.jpg',
+    img:'swedishcare.jpg',
   },
   {
     name: "Deep Tissue",
@@ -39,7 +39,7 @@ const services = [
     price: "",
     per: "per person",
     badge: "Popular",
-    img:'images/deep tissue.jpg',
+    img:'deeptissue.jpg',
   },
   {
     name: "Yoga-Release",
@@ -47,17 +47,18 @@ const services = [
     price: "",
     per: "per person",
     badge:'',
-    img:'images/yoga.jpg',
+    img:'yogarelease.jpg',
   },
 
 ];
 
+console.log("script loaded!");
 const grid = document.getElementById('servicesGrid');
 
 //"for each service in the list, do this..."
 // s = the current service being processed
 
-services. forEach((s) => {
+services.forEach((s) => {
   const card = document.createElement("a"); //create a card element
   card.href = "booking.html"; //link to booking page
   card.className = "services-card";
