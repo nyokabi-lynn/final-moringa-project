@@ -60,7 +60,7 @@ const grid = document.getElementById('servicesGrid');
 services. forEach((s) => {
   const card = document.createElement("a"); //create a card element
   card.href = "booking.html"; //link to booking page
-  card.className = "service-card";
+  card.className = "services-card";
   // Fill the card with HTML using the service data
   card.innerHTML = `
     <img src="${s.img}"/>       
