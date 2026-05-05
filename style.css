@@ -31,18 +31,18 @@ nav {
 }
 
 .nav-logo-img{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 60%;
 }
 
 
 .nav-logo-text {
-  font-family: 'Playball-Regular', sans-serif;
-  font-size: 16px;
+  font-family: 'Playball Regular', sans-serif;
+  font-size: 30px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   
 }
 
@@ -249,11 +249,11 @@ nav a:hover {
   line-height: 1.7;
 }
 
+/*footer section */
 
 
 
-
-
+/*service section
 
 
 
