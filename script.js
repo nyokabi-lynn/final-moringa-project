@@ -20,7 +20,6 @@ document.querySelectorAll(".mobile-menu a").forEach((link) => {
 //local storage//
 
 
-//services array//
 
 
 //booking form with event listener//
