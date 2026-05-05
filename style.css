@@ -257,8 +257,41 @@ nav a:hover {
 
 
 /*services section*/
+.services-section{
+  padding:5rem 2rem;
+  background: rgb(145, 188, 154);
+  font-family: 'Playfair Display', serif;
+}
 
+.services-header{
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
+.services-tag{
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 1rem;
+}
+
+.services-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: rgb(97, 117, 99);
+  font-family: 700;
+  margin: 0;
+}
+
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+  max-width: 960px;
+  margin:0 auto;
+}
 
 
 /*booking form section */
