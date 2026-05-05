@@ -329,8 +329,65 @@ nav a:hover {
   filter:brightness(1); /*full brightness on hover*/
 }
 
+/*dark overlay on image*/
+.services-img-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(10,20,40,0.35);
+  transition: background 0.4s;
+}
 
+.services-card:hover .services-img-overlay{
+  background: rgba(10,20,40,0.1);  /*lighter on hover*/
+}
 
+.services-badge{
+  position: absolute;
+  top:12px;
+  right:12px;
+  background: rgba(10,20,40,0.75);
+  color: #3e6d57;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding:4px 10px;
+  border-radius: 20px;
+  border: 0.5px solid rgba(168 208 255 0.3);
+}
+
+/*card body*/
+.services-body{
+  padding: 1.2rem 1.25rem 1.4rem;
+}
+
+.services-name{
+  font-family: 'Playball Regular', sans-serif;
+  font-size: 18px;
+  color:rgb(13, 45, 13);
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.services-desc{
+  font-size:13px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+/*price and book now row*/
+.services-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-price{
+  font-size: 15px;
+  color: #9bbda9;
+}
+
+.services-price span
 
 
 
