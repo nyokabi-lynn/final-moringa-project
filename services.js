@@ -1,6 +1,5 @@
 //services array//
 
-document;
 const services = [
   {
     name: "Aromatherapy",
@@ -8,14 +7,15 @@ const services = [
     price: "",
     per: "per person",
     badge: "Popular",
-    img:'',
+    img:'images/aromatherapy.jpg.jpg',
   },
   {
     name: "Wood Therapy",
     desc: "",
     price: "",
     per: "per person",
-    img:'',
+    badge:'',
+    img:'images/wood therapy.jpg',
   },
   {
     name: "Nature's Kiss",
@@ -23,7 +23,7 @@ const services = [
     price: "",
     per: "per person",
     badge: "Premium",
-    img:'',
+    img:'images/outdoor nature spa.jpg',
   },
   {
     name: "Swedish Massage",
@@ -31,7 +31,7 @@ const services = [
     price: "",
     per: "per person",
     badge: "Popular",
-    img:'',
+    img:'images/swedish care.jpg',
   },
   {
     name: "Deep Tissue",
@@ -39,14 +39,37 @@ const services = [
     price: "",
     per: "per person",
     badge: "Popular",
-    img:'',
+    img:'images/deep tissue.jpg',
   },
   {
     name: "Yoga-Release",
     desc: "",
     price: "",
     per: "per person",
-    img:'',
+    badge:'',
+    img:'images/yoga.jpg',
   },
 
 ];
+
+const grid = document.getElementById('servicesGrid');
+
+//"for each service in the list, do this..."
+// s = the current service being processed
+
+services. forEach((s) => {
+  const card = document.createElement("a"); //create a card element
+  card.href = "booking.html"; //link to booking page
+  card.className = "service-card";
+  // Fill the card with HTML using the service data
+  card.innerHTML = `
+    <img src="${s.img}"/>       
+    <h3>${s.name}</h3>          
+    <p>${s.desc}</p>            
+    <div>${s.price}</div>       
+  `;
+  
+  grid.appendChild(card);
+} );
+
+
