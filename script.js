@@ -16,3 +16,12 @@ document.querySelectorAll(".mobile-menu a").forEach((link) => {
     document.getElementById("hamburger").classList.remove("is-open");
   });
 });
+
+//local storage//
+
+
+//services array//
+
+
+//booking form with event listener//
+

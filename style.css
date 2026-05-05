@@ -165,7 +165,7 @@ nav a:hover {
  /*feature section */
 
  .features-section{
-  background: rgb(179, 176, 176);
+  background: rgb(246, 237, 237);
   padding: 5rem 2rem;
   font-family: 'Playfair Display',serif;
  }
@@ -249,31 +249,22 @@ nav a:hover {
   line-height: 1.7;
 }
 
-/*footer section */
 
 
-
-/*service section
-
-
+/*about section */
 
 
 
 
+/*services section*/
 
 
 
 
+/*booking form section */
 
 
-
-
-
-
-
-
-
-
+/*footer section*/
 
 
 
@@ -354,3 +345,4 @@ nav a:hover {
  }
 
 
+/*Responsive section */
