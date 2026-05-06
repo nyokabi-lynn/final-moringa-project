@@ -259,7 +259,7 @@ nav a:hover {
 /*services section*/
 .services-section{
   padding:5rem 2rem;
-  background: rgb(208, 217, 210);
+  background: rgb(6, 56, 36);
   font-family: 'Playfair Display', serif;
   padding-top: 8rem;
 }
@@ -296,9 +296,9 @@ nav a:hover {
 }
 
 .services-card{
-  background: #9bbda9;
-  border:0.5px solid(255 255 255 0.08);
-  border-radius: 10px;
+  background: rgb(244, 241, 241);
+  border:0.5px solid(168 255 255 0.08);
+  border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
   text-decoration: none;
@@ -354,7 +354,7 @@ nav a:hover {
   position: absolute;
   top:12px;
   right:12px;
-  background: rgba(10,20,40,0.75);
+  background: rgba(213, 217, 224, 0.75);
   color: #3e6d57;
   font-size: 11px;
   letter-spacing: 1.5px;
@@ -372,7 +372,7 @@ nav a:hover {
 .services-name{
   font-family: 'Playball Regular', sans-serif;
   font-size: 18px;
-  color:rgb(13, 45, 13);
+  color:rgb(236, 242, 236);
   font-weight: 700;
   margin: 0 0 0.5rem;
 }
@@ -393,7 +393,7 @@ nav a:hover {
 
 .services-price{
   font-size: 15px;
-  color: #9bbda9;
+  color: #353e39;
 }
 
 .services-price span{

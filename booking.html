@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
-    <link rel="stylesheet" href="style.css"/> 
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
      <nav>
@@ -35,10 +37,72 @@
     <a href="booking.html">Contact</a>
   </div>
 
+  <div>
+    <span class="booking-eyebrow">Get in Touch</span>
+    <h1 class="booking-heading">Book Your Next Session</h1>
+    <ul class="info-list">
+      <li><div class="info-dot"></div>Choose from our range of curated services</li>
+      <li><div class="info-dot"></div>Free cancellation up to 48hours before</li>
+    </ul>
+  </div>
+
   <!--booking form-->
+  <div class="booking-form-wrap">
+    <h2 class="form-title">Your Details</h2>
+    
+    <div id="bookingForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First name</label>
+          <input type="text" id="firstName" placeholder=""/>
+        </div>
+        <div class="form-group">
+          <label>Last name</label>
+          <input type="text" id="lastName" placeholder=""/>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="email" id="email" placeholder=""/>
+      </div>
+
+      <div class="form-group">
+        <label>Phone number</label>
+        <input type="tel" id="phone" placeholder=""/>
+      </div>
+
+      <div class="form-group">
+        <label>Select a service</label>
+        <div class="select-wrap">
+          <select id="services">
+            <option value="" disabled selection>Choose a service...</option>
+            <option value="Aromatherapy"></option>
+            <option value="Wood Therapy"></option>
+            <option value="Nature's touch"></option>
+            <option value="Swedish Massage"></option>
+            <option value="Deep Tissue"></option>
+            <option value="Yoga"></option>
+            <option value="Mat Pilates"></option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
 
     
-<!--footer section-->
 
 <script src="script.js"></script>
 </body>

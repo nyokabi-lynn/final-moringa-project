@@ -71,13 +71,33 @@ services.forEach((s) => {
   card.href = "booking.html"; //link to booking page
   card.className = "services-card";
   // Fill the card with HTML using the service data
-  card.innerHTML = `
-    <img src="${s.img}"/>       
-    <h3>${s.name}</h3>          
-    <p>${s.desc}</p>            
-    <div>${s.price}</div>       
-  `;
-  
+  card.innerHTML =
+    '<div class="services-img-wrap">' +
+    '<img src"' +
+    s.img +
+    '" alt="' +
+    s.name +
+    '" loading="lazy"/>' +
+    '<div class="services-img-overlay"></div>' +
+    (s.badge ? '<div class="services-badge">' + s.badge + "</div>" : "") +
+    "</div>" +
+    '<div class="service-body">' +
+    '<h3 class="service-name">' +
+    s.name +
+    "</h3>" +
+    '<p class="service-desc">' +
+    s.desc +
+    "</p>" +
+    '<div class="service-footer">' +
+    '<div class="service-price">' +
+    s.price +
+    " <span>" +
+    s.per +
+    "</span></div>" +
+    '<div class="service-cta">Book now &rarr;</div>' +
+    "</div>" +
+    "</div>";
+
   grid.appendChild(card);
 } );
 
