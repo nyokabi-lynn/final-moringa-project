@@ -259,7 +259,7 @@ nav a:hover {
 /*services section*/
 .services-section{
   padding:5rem 2rem;
-  background: rgb(145, 188, 154);
+  background: rgb(208, 217, 210);
   font-family: 'Playfair Display', serif;
   padding-top: 8rem;
 }
@@ -304,6 +304,13 @@ nav a:hover {
   text-decoration: none;
   display: block;
   transition:border-color 0.3s transform 0.3s;
+}
+.services-card img{
+  width:100%;
+  height:200px;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 1/1;
 }
 
 .services-card:hover{
