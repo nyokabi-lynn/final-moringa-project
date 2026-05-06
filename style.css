@@ -616,12 +616,6 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
 /*footer section*/
 
 
@@ -704,3 +698,43 @@ nav a:hover {
 
 
 /*Responsive section */
+@media (max-width:768px){
+  .booking-wrap{ 
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2rem 1.2rem;
+  }
+  .form-row{grid-template-columns: 1fr;}
+  .booking-heading{font-size: 30px;}
+  .booking-form-wrap{padding: 1.5rem;}
+  nav{padding: 1rem 1.5rem;}
+  nav a:not(.active) {display: none;}
+
+  .hamburger{display: flex;}
+  .hero-title{font-size: 15px;}
+  .nav-links{display: none;}
+  .nav-logo-text{font-size: 14px;}
+  .hero-title{font-size: 38px;}
+  .hero-subtitle{font-size: 15px;}
+  .hero-btn{padding: 12px 32px;}
+  .services-grid{grid-template-columns: repeat(2, 1fr);}
+  .services-title{font-size: 28px;}
+
+}
+@media (max-width:480px){
+  nav{padding: 1rem;}
+  .nav-logo-text{display: none;}
+  .nav-logo-img{height: 36px;}
+  .hero-title{font-size: 28px;}
+  .hero-subtitle{font-size: 14px; margin-bottom: 1.5rem;}
+  .hero-btn{padding: 12px 28px; font-size: 11px; letter-spacing: 2px;}
+  .hero-content{padding: 1.5rem 1rem;}
+  .services-grid{grid-template-columns: 1fr;}
+  .services-section{padding: 3rem 1rem;}
+  .services-title{font-size: 22px;}
+  .services-img-wrap{height: 200px;}
+  .booking-heading{font-size: 24px;}
+  .booking-form-wrap{padding: 1.2rem;}
+  .submit-btn{font-size: 11px; letter-spacing: 2px;padding: 14px;}
+  .form-title{font-size: 28px;}
+}
