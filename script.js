@@ -17,10 +17,20 @@ document.querySelectorAll(".mobile-menu a").forEach((link) => {
   });
 });
 
-//local storage//
-
-
-
 
 //booking form with event listener//
+function submitBooking(){
+  const firstName = document.getElementById('firstName').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const service = document.getElementById('service').value;
+
+  //form validation//
+  if(!firstName || !email || !service){
+    alert('Please fill in your name, email, and select a service.');
+    return;
+  }
+
+  document.getElementById('bookingForm').style.display = 'none';
+  document.getElementById('successMsg').style.display = 'block';
+}
 

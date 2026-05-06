@@ -77,33 +77,46 @@
         <div class="select-wrap">
           <select id="services">
             <option value="" disabled selection>Choose a service...</option>
-            <option value="Aromatherapy"></option>
-            <option value="Wood Therapy"></option>
-            <option value="Nature's touch"></option>
-            <option value="Swedish Massage"></option>
-            <option value="Deep Tissue"></option>
-            <option value="Yoga"></option>
-            <option value="Mat Pilates"></option>
+            <option value="aromatherapy">Aromatherapy</option>
+            <option value="woodTherapy">Wood Therapy</option>
+            <option value="nature">Nature's Touch</option>
+            <option value="swedish">Swedish Massage</option>
+            <option value="deepTissue">Deep Tissue</option>
+            <option value="yoga">Yoga</option>
+            <option value="matPilates">Mat Pilates</option>
           </select>
+          <span class="select-arrow">&#9660;</span>
         </div>
       </div>
-    </div>
 
+      <div class="form-row">
+        <div class="form-group">
+          <label>Preffered date</label>
+          <input type="date" id="date"/>
+        </div>
+        <div class="form-group">
+          <label>Number of people</label>
+          <input type="number" id="guests" placeholder="2" min="1" max="50"/>
+        </div>
+      </div>
 
+      <div class="form-group">
+        <label>Special requests</label>
+        <textarea id="message" placeholder="Any special requirements..."></textarea>
+      </div>
 
-
-
-
-
-
-
-
-
-  </div>
-
-
+      <button class="submit-btn" onclick="submitBooking()">Confirm Booking</button>
     
 
-<script src="script.js"></script>
+    <div class="success-msg" id="successMsg">
+      <div class="success-icon">&#10003;</div>
+      <h3>Booking Recieved!</h3>
+      <p>Thank you for booking with Us! We'll reach out within 24hours.</p>
+    </div>
+  </div>
+  </div>
+  
+
+<script src="script.js" defer></script>
 </body>
 </html>
