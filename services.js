@@ -81,22 +81,20 @@ services.forEach((s) => {
     '<div class="services-img-overlay"></div>' +
     (s.badge ? '<div class="services-badge">' + s.badge + "</div>" : "") +
     "</div>" +
-    '<div class="service-body">' +
-    '<h3 class="service-name">' +
+    '<div class="services-body">' +
+    '<h3 class="services-name">' +
     s.name +
-    "</h3>" +
-    '<p class="service-desc">' +
+    '</h3>' +
+    '<p class="services-desc">' +
     s.desc +
-    "</p>" +
-    '<div class="service-footer">' +
-    '<div class="service-price">' +
+    '</p>' +
+    '<p class="services-price">' +
     s.price +
-    " <span>" +
+    '<span>' +
     s.per +
-    "</span></div>" +
-    '<div class="service-cta">Book now &rarr;</div>' +
-    "</div>" +
-    "</div>";
+    '</span></p>' +
+    '<button class="services-btn">Book now </button>' +
+    '</div>';
 
   grid.appendChild(card);
 } );
