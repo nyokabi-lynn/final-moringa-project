@@ -307,7 +307,7 @@ nav a:hover {
 .about-btn {
   display: inline-block;
   margin-top: 1rem;
-  padding: 12px 32px;
+  padding: 12px 24px;
   background: transparent;
   color: #2d6a4f;
   border: 1.5px solid #2d6a4f;
@@ -328,7 +328,7 @@ nav a:hover {
 
 /*services section*/
 .services-section{
-  padding:5rem 2rem;
+  padding:4rem 2rem;
   background: rgb(212, 235, 224);
   font-family: 'Playfair Display', serif;
   padding-top: 5rem;
@@ -539,8 +539,8 @@ nav a:hover {
   display: flex;
   align-items: flex-start;
   gap:12px;
-  font-size: 13px;
-  color:rgba(55, 54, 54, 0.5);
+  font-size: 20px;
+  color:rgba(6, 36, 13, 0.5);
   line-height: 1.6;
 }
 

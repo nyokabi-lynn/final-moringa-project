@@ -1,14 +1,14 @@
 // SAVE form data as user types//
 
 // Get all the input fields
-const firstName = document.getElementById("firstName");
-const lastName = document.getElementById("lastName");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const services = document.getElementById("services");
-const date = document.getElementById("date");
-const guests = document.getElementById("guests");
-const message = document.getElementById("message");
+const firstName = document.getElementById("firstName").reset();
+const lastName = document.getElementById("lastName").reset();
+const email = document.getElementById("email").reset();
+const phone = document.getElementById("phone").reset();
+const services = document.getElementById("services").reset();
+const date = document.getElementById("date").reset();
+const guests = document.getElementById("guests").reset();
+const message = document.getElementById("message").reset();
 
 // as a user types  it save it automatically//
 firstName.addEventListener("input", function () {
