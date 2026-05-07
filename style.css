@@ -518,7 +518,7 @@ nav a:hover {
 
 .booking-heading{
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
+  font-size: 30px;
   color: #353e39;
   line-height: 1.15;
   margin-bottom: 1.2rem;
@@ -535,7 +535,7 @@ nav a:hover {
   display: flex;
   align-items: flex-start;
   gap:12px;
-  font-size: 13px;
+  font-size: 18px;
   color:rgba(55, 54, 54, 0.5);
   line-height: 1.6;
 }
