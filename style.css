@@ -261,10 +261,6 @@ nav a:hover {
 
 
 /*about section */
-
-/* ════════════════════════════
-   ABOUT SECTION
-════════════════════════════ */
 .about-section {
   padding: 16rem 2rem;
   background: whitesmoke;
@@ -522,7 +518,7 @@ nav a:hover {
 
 .booking-heading{
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
+  font-size: 30px;
   color: #353e39;
   line-height: 1.15;
   margin-bottom: 1.2rem;
@@ -541,6 +537,8 @@ nav a:hover {
   gap:12px;
   font-size: 20px;
   color:rgba(6, 36, 13, 0.5);
+  font-size: 18px;
+  color:rgba(55, 54, 54, 0.5);
   line-height: 1.6;
 }
 
@@ -698,9 +696,6 @@ nav a:hover {
 
 /*footer section*/
 
-/* ════════════════════════════
-   FOOTER
-════════════════════════════ */
 .footer {
   background: #1b4332;
   font-family: 'Playfair Display', serif;
