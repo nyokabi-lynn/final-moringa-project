@@ -259,7 +259,7 @@ nav a:hover {
 /*services section*/
 .services-section{
   padding:5rem 2rem;
-  background: rgb(6, 56, 36);
+  background: rgb(241, 237, 237);
   font-family: 'Playfair Display', serif;
   padding-top: 8rem;
 }
@@ -323,6 +323,7 @@ nav a:hover {
   width: 100%;
   height:180px;
   overflow: hidden;
+  background: #353e39;
 }
 
 .services-img-wrap img{
@@ -389,11 +390,15 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .services-price{
   font-size: 15px;
   color: #353e39;
+  font-weight: 700;
 }
 
 .services-price span{
@@ -408,26 +413,30 @@ nav a:hover {
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #a8d0ff;
+  color: #a7a8ab;
+  background: #606e66;
+  padding: 8px 16px;
+  border-radius: 20px;
   opacity: 0;
   transform: translateX(-6px);
-  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s background 0.3s;
 }
 
 .services-card:hover .services-cta{
   opacity:1;
   transform: translateX(0);
+  background: #1b4332;
 }
 
 
 /*booking form section */
-
+.booking-body{color: rgb(246, 237, 237);}
 .booking-wrap{
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem 4rem;
   gap: 5rem;
   align-items: start;
 }
@@ -444,7 +453,7 @@ nav a:hover {
 .booking-heading{
   font-family: 'Playball Regular', sans-serif;
   font-size: 42px;
-  color: #fff;
+  color: #353e39;
   line-height: 1.15;
   margin-bottom: 1.2rem;
 }
@@ -461,7 +470,7 @@ nav a:hover {
   align-items: flex-start;
   gap:12px;
   font-size: 13px;
-  color:rgba(255,255,255,0.5);
+  color:rgba(55, 54, 54, 0.5);
   line-height: 0.6;
 }
 
@@ -483,8 +492,8 @@ nav a:hover {
 
 .form-title{
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  color: #fff;
+  font-size: 40px;
+  color: #2d2b2b;
   margin-left: 2rem;
 }
 
