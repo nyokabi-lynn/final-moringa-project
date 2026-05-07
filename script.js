@@ -133,3 +133,50 @@ function getDayOfWeek(day, month, year) {
 }
 
 
+
+// DATE VALIDATION
+
+// Set min and max dates //
+function setDateLimits() {
+  const dateInput = document.getElementById('date');
+  
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  //padStart is used to add a padding to the beggining string with another dtring until a specific length is attained//
+  const mm = String(today.getMonth() + 1).padStart(2, '0');
+  const dd = String(today.getDate()).padStart(2, '0');
+  
+  const todayFormatted = yyyy + '-' + mm + '-' + dd;
+  
+  // Max date — 1 year from today
+  const maxDate = new Date();
+  maxDate.setFullYear(maxDate.getFullYear() + 1);
+  const maxYyyy = maxDate.getFullYear();
+  const maxMm = String(maxDate.getMonth() + 1).padStart(2, '0');
+  const maxDd = String(maxDate.getDate()).padStart(2, '0');
+  const maxFormatted = maxYyyy + '-' + maxMm + '-' + maxDd;
+
+  // Apply limits to input
+  dateInput.min = todayFormatted;   //cannot pick past dates
+  dateInput.max = maxFormatted;     // can not pick more than 1 year ahead
+}
+
+setDateLimits();
+
+
+// Validate date when user picks one
+date.addEventListener('change', function() {
+  const selectedDate = new Date(date.value);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);   // reset time to midnight for fair comparison
+
+  if (selectedDate < today) {
+    alert('Please select a future date.');
+    date.value = '';
+    localStorage.removeItem('date');
+    return;
+  }
+
+  localStorage.setItem('date', date.value);
+  console.log('saved date:', date.value);
+});
