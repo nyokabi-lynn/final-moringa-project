@@ -4,9 +4,9 @@
 
 Built by **LynnNyokabi** .
 
-### Project Description
+# Project Description
 
-# 🌿 Kaizen Spa Website
+## 🌿 Kaizen Spa Website
 The Kaizen Spa website is designed to provide services that aid in relaxation and improvement of overall wellbeing of an individual.We help stimulate a proper mind and body connection leaving you feeling whole again.
 A  wellness website built with HTML, CSS and JavaScript. Designed with a natural greenery aesthetic to reflect the brand's commitment to organic, eco-friendly wellness treatments.
 
