@@ -262,7 +262,75 @@ nav a:hover {
 
 /*about section */
 
+/* ════════════════════════════
+   ABOUT SECTION
+════════════════════════════ */
+.about-section {
+  padding: 16rem 2rem;
+  background: whitesmoke;
+  font-family: 'Playfair Display', serif;
+}
 
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #52b788;
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-size: 34px;
+  color: #1b4332;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.about-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 32px;
+  background: transparent;
+  color: #2d6a4f;
+  border: 1.5px solid #2d6a4f;
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.about-btn:hover {
+  background: #2d6a4f;
+  color: #fff;
+  transform: translateY(-2px);
+}
 
 
 /*services section*/
@@ -270,7 +338,7 @@ nav a:hover {
   padding:5rem 2rem;
   background: rgb(212, 235, 224);
   font-family: 'Playfair Display', serif;
-  padding-top: 8rem;
+  padding-top: 20rem;
 }
 
 .services-header{
@@ -815,7 +883,18 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+.about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
+  .about-img img {
+    height: 280px;
+  }
+
+  .about-title {
+    font-size: 26px;
+  }
 
 }
 @media (max-width:480px){
