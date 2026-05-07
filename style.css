@@ -287,17 +287,10 @@ nav a:hover {
   border-radius: 12px;
 }
 
-.about-eyebrow {
-  display: inline-block;
-  font-size: 11px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #52b788;
-  margin-bottom: 1rem;
-}
 
 .about-title {
   font-size: 34px;
+  font-family: 'Playball Regular',sans-serif;
   color: #1b4332;
   font-weight: 700;
   margin-bottom: 1.2rem;
@@ -308,7 +301,7 @@ nav a:hover {
   font-size: 14px;
   color: #555;
   line-height: 1.8;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .about-btn {
@@ -338,7 +331,7 @@ nav a:hover {
   padding:5rem 2rem;
   background: rgb(212, 235, 224);
   font-family: 'Playfair Display', serif;
-  padding-top: 20rem;
+  padding-top: 5rem;
 }
 
 .services-header{
