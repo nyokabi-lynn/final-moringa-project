@@ -73,7 +73,7 @@ services.forEach((s) => {
   // Fill the card with HTML using the service data
   card.innerHTML =
     '<div class="services-img-wrap">' +
-    '<img src"' +
+    '<img src="' +
     s.img +
     '" alt="' +
     s.name +

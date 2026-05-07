@@ -20,6 +20,14 @@ nav {
   padding: 1.5rem 3rem;
   z-index: 10;
   box-sizing: border-box;
+  background: transparent;
+}
+
+/* Solid nav — for about and booking pages */
+.nav-solid {
+  position: fixed;            /* so it stays at top when scrolling */
+  background: #1b4332;       
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
 }
 
 .nav-logo{
@@ -79,6 +87,7 @@ nav a:hover {
     background-image: url('bamboo-sitting-area.jpg');
     background-size: cover;
     background-position: center;
+    padding-top: 0;
 }
 
 .hero-overlay{
@@ -440,9 +449,13 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 8rem 2rem 4rem;
+  padding: 15rem 2rem 4rem;
   gap: 5rem;
   align-items: start;
+}
+
+.booking-left{
+  padding-top: 10rem;
 }
 
 .booking-eyebrow{
@@ -455,7 +468,7 @@ nav a:hover {
 }
 
 .booking-heading{
-  font-family: 'Playball Regular', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 42px;
   color: #353e39;
   line-height: 1.15;
@@ -475,7 +488,7 @@ nav a:hover {
   gap:12px;
   font-size: 13px;
   color:rgba(55, 54, 54, 0.5);
-  line-height: 0.6;
+  line-height: 1.6;
 }
 
 .info-dot{
@@ -488,17 +501,18 @@ nav a:hover {
 }
 
 .booking-form-wrap{
-  background: rgba(255,255,255,0.03);
-  border: 0.5px solid rgba(255,255,255,0.1);
+  background:#fff;
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 14px;
   padding: 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
 
 .form-title{
   font-family: 'Playfair Display', serif;
   font-size: 40px;
   color: #2d2b2b;
-  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .form-row{
@@ -511,7 +525,7 @@ nav a:hover {
 .form-group{
   display: flex;
   flex-direction: column;
-  grid-area: 6px;
+  gap: 6px;
   margin-bottom: 1rem;
 }
 
@@ -519,20 +533,20 @@ nav a:hover {
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color:rgba(255,255,255,0.4);
+  color:#3e6d57;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea{
-  background: rgba(255,255,255,0.05);
-  border: 0.5px solid rgba(255,255,255,0.12);
+  background: #9bbda9;
+  border: 1px solid rgba(45,106,79,0.3);
   border-radius: 6px;
   padding: 12px 14px;
-  color: #3e6d57;
+  color: #1b4332;
   font-family: 'Playfair Display',serif;
   font-size: 14px;
-  outline: #353e39;
+  outline: none;
   transition: border-color 0.3s, background 0.3s;
   width: 100%;
   appearance: none;
@@ -540,14 +554,14 @@ nav a:hover {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color:rgba(255,255,255,0.2);
+  color:#aaa;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: rgba(168,208,255,0.5);
-  background: rgba(168,208,255,0.05);
+  border-color: #2d6a4f;
+  background:#edf5ef;
 }
 
 .form-group textarea{
@@ -568,7 +582,7 @@ nav a:hover {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  color:rgba(255,255,255,0.35);
+  color:#2d6a4f;
   font-size: 10px;
 }
 
@@ -583,7 +597,7 @@ nav a:hover {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 6px;
-  color: #fff;
+  color:#2d6a4f;
   font-family:'Playball Regular', sans-serif;
   font-size: 12px;
   letter-spacing: 3px;
@@ -594,7 +608,7 @@ nav a:hover {
 }
 
 .submit-btn:hover{
-  background: rgba(168,208,255,0.1);
+  background:#1b4332;
   border-color: #353e39;
   transform: translateY(-2px);
 }
@@ -621,7 +635,7 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-.succes-msg p{
+.success-msg p{
   font-size: 14px;
   color: rgba(255,255,255,0.45);
   line-height: 1.6;
@@ -718,9 +732,6 @@ nav a:hover {
   font-size: 12px;
   color: rgba(255,255,255,0.25);
 }
-
-
-
 
 
  /*hamburger toggle menu */
