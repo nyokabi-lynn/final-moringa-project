@@ -41,7 +41,7 @@ nav {
 .nav-logo-text {
   font-family: 'Playball Regular', sans-serif;
   font-size: 30px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 400;
   
 }
@@ -55,7 +55,7 @@ nav {
 
 
 nav a {
-  color: rgb(200, 232, 200);
+  color: rgb(143, 165, 143);
   text-decoration: none;
   font-family: "Playfair Display", serif;
   font-size: 14px;
@@ -273,9 +273,10 @@ nav a:hover {
 .services-tag{
   display: inline-block;
   font-size: 40px;
+  font-family: 'Playball Regular',sans-serif;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba(7, 49, 26, 0.45);
+  color: rgba(5, 29, 16, 0.45);
   margin-bottom: 1rem;
   text-align: center;
   justify-content: center;
@@ -317,7 +318,7 @@ nav a:hover {
 .services-img-wrap{
   position: relative;
   width: 100%;
-  height:180px;
+  height:200px;
   overflow: hidden;
   background: #353e39;
 }
@@ -410,7 +411,7 @@ nav a:hover {
 .services-btn{
     padding: 16px 24px;
     background: transparent;
-    color: rgb(21, 51, 21);
+    color: rgba(21, 51, 21);
     border: 1.5px solid rgba(58, 65, 60, 0.7);
     font-family:'Playfair Display', serif;
     font-size: 10px;
@@ -630,17 +631,93 @@ nav a:hover {
 
 /*footer section*/
 
+/* ════════════════════════════
+   FOOTER
+════════════════════════════ */
+.footer {
+  background: #1b4332;
+  font-family: 'Playfair Display', serif;
+  padding: 3rem 2rem 0;
+}
 
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  border-bottom: 0.5px solid rgba(255,255,255,0.1);
+}
 
+/* Logo */
+.footer-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
 
+.footer-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+  max-width: 220px;
+}
 
+/* Links */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
 
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
 
+.footer-links a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: color 0.3s, padding-left 0.3s;
+}
 
+.footer-links a:hover {
+  color: #b7e4c7;
+  padding-left: 4px;
+}
 
+/* Contact */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
 
+.footer-contact p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+}
 
+/* Bottom bar */
+.footer-bottom {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+  text-align: center;
+}
 
+.footer-bottom p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+}
 
 
 
@@ -731,6 +808,11 @@ nav a:hover {
   .hero-btn{padding: 12px 32px;}
   .services-grid{grid-template-columns: repeat(2, 1fr);}
   .services-title{font-size: 28px;}
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
 
 }
 @media (max-width:480px){
@@ -749,4 +831,8 @@ nav a:hover {
   .booking-form-wrap{padding: 1.2rem;}
   .submit-btn{font-size: 11px; letter-spacing: 2px;padding: 14px;}
   .form-title{font-size: 28px;}
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
 }
